@@ -37,7 +37,7 @@
       shareHeader.textContent = 'Share';
       headerRow.insertBefore(shareHeader, headerChildren[1]);
     }
-    
+
 
     // find submission and put in all the share buttons
     const rows = document.querySelectorAll('.group.flex.h-\\[48px\\]');
@@ -47,7 +47,7 @@
       const columnsContainer = row.querySelector('.flex.h-full.w-full.flex-shrink-0.items-center');
       if (!columnsContainer) return;
       const columns = Array.from(columnsContainer.children);
-      if (columns.length < 6) return; 
+      if (columns.length < 6) return;
       const shareDiv = document.createElement('div');
       shareDiv.className = columns[1].className + ' leetcode-daily-share-btn flex items-center justify-center';
       shareDiv.style.width = '80px';
@@ -161,7 +161,7 @@
     injectShareButtonsInDivList();
   }
 
- 
+
   main();
   let lastUrl = location.href;
   new MutationObserver(() => {
